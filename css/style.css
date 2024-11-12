@@ -18,6 +18,10 @@
     margin-right: auto;
 }
 
+body {
+    font-family: "Open Sans", sans-serif;
+}
+
 /*---------
     HEADER
 ----------*/
@@ -27,7 +31,8 @@ header {
     color: white;
     padding: 15px 0;
     display: flex;
-    
+    justify-content: center;
+    align-items: center;
 }
 
 ul {
@@ -36,10 +41,12 @@ ul {
 
 .main-nav {
     list-style: none;
+    display: flex;
     justify-content: center;
     flex-direction: row;
-    display: flex;
     gap: 10px;
+    position: relative;
+    left: -50px;
 }
 
 .main-nav ul a {
@@ -55,8 +62,10 @@ ul {
 }
 
 .logo {
-    position: relative;
-    left: 420px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
 
 .logo img {
@@ -66,13 +75,241 @@ ul {
 
 .icons {
     display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
     gap: 10px;
 }
 
 /*---------
-    IMG
+    HOVER
 ----------*/
 
+.container-img {
+    position: relative;
+    display: inline-block;
+}
+
+.img-hover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.container-img:hover .img-hover {
+    opacity: 1;
+}
+
+.container-img:hover .img-default {
+    opacity: 0;
+}
+
+
+/*---------
+    SECTION
+----------*/
+
+.row {
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: space-around;
+    gap: 5px;
+}
+
 .col {
-    width: calc(100% / 3);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 60px;
+}
+
+.img-size {
+    height: 462px;
+    width: 320px;
+    gap: 30px;
+    margin-top: 60px;
+}
+
+section {
+    margin: auto;
+}
+
+.descriptions {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-size: 14px;
+}
+
+.brand-levis {
+    position: relative;
+    left: 3px;
+    bottom: 40px;
+}
+
+.brand-guess {
+    position: relative;
+    right: 92px;
+    bottom: 40px;
+}
+
+.brand-czf {
+    position: relative;
+    right: 190px;
+    bottom: 40px;
+}
+
+.names {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-size: 18px;
+}
+
+.fit-tee {
+    position: relative;
+    left: 68px;
+    bottom: 40px;
+}
+
+.rose-tee {
+    position: relative;
+    right: 92px;
+    bottom: 40px;
+}
+
+.pastello {
+    position: relative;
+    right: 121px;
+    bottom: 40px;
+}
+
+.discount {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-size: 14px;
+    color: red;
+}
+
+.levi-price {
+    position: relative;
+    left: 22px;
+    bottom: 40px;
+}
+
+.guess-price {
+    position: relative;
+    right: 93px;
+    bottom: 40px;
+}
+
+.czf-price {
+    position: relative;
+    right: 218px;
+    bottom: 40px;
+}
+
+.old-price {
+    color: black;
+}
+
+/*---------
+    SECTION
+----------*/
+
+.brand-levis-tee {
+    position: relative;
+    left: -6px;
+    bottom: 40px;
+}
+
+.brand-maya {
+    position: relative;
+    right: 118px;
+    bottom: 40px;
+}
+
+.brand-esprit {
+    position: relative;
+    right: 277px;
+    bottom: 40px;
+}
+
+.fit-tee-2 {
+    position: relative;
+    left: 38px;
+    bottom: 40px;
+}
+
+.stripe {
+    position: relative;
+    right: 55px;
+    bottom: 40px;
+}
+
+.maglione {
+    position: relative;
+    right: 182px;
+    bottom: 40px;
+}
+
+.levi-price-tee {
+    position: relative;
+    left: 0px;
+    bottom: 40px;
+}
+
+.maya-price {
+    position: relative;
+    right: 161px;
+    bottom: 40px;
+}
+
+.esprit-price {
+    position: relative;
+    right: 273px;
+    bottom: 40px;
+}
+
+/*---------
+    FOOTER
+----------*/
+
+footer {
+    background-color: #1a1a1a;
+}
+
+.foot {
+    color: white;
+    padding: 15px;
+}
+
+.footer-p {
+    display: flex;
+    flex-direction: row;
+    font-size: 12px;
+    margin-top: 10px;
+    gap: 10px;
+}
+
+.footer-right {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-start;
+    color: white;
+    position: relative;
+    bottom: 58px;
+}
+
+.icons-foot {
+    color: white;
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    position: relative;
+    bottom: 48px;
 }
